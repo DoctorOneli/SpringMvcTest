@@ -5,11 +5,28 @@
 <title>success page</title>
 </head>
 <body>
-	<h5>login was successful</h5>name：
-	<p th:text="${user.username}">
-	password:<p th:text="${user.password}">
-	age:<p th:text="${user.age}">
-		 
-	</p>
+	<h5>login was successful</h5>
+	<table border="0">
+		<tr>
+			<td>name:</td>
+			<td th:text="${user.username}"></td>
+		</tr>
+
+		<tr>
+			<td>password:</td>
+			<td th:text="${user.password}"></td>
+		</tr>
+
+		<tr>
+			<td>age:</td>
+			<td th:text="${user.age}"></td>
+		</tr>
+
+		<tr>
+			<td>email:</td>
+			<td th:text="${user.email}"></td>
+		</tr>
+
+	</table>
 </body>
 </html>
