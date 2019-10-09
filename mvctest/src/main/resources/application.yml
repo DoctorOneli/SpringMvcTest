@@ -11,8 +11,9 @@ server:
     uri-encoding: UTF-8
     max-threads: 500
 
-#模版thymeleaf配置
+ 
 spring:
+#模版thymeleaf配置
   thymeleaf:
     #路径
     prefix: classpath:/public/
@@ -23,4 +24,17 @@ spring:
     encoding: UTF-8
     mode: HTML5
     cache: false
+    #解析器优先级
+    template-resolver-order: 1
+  
+#模版freemarker配置  
+  freemarker:
+   #路径
+    template-loader-path: classpath:/public/
+     #后缀
+    suffix: .ftl
+    content-type: text/html
+    charset: UTF-8
+    
+       
  
